@@ -21,7 +21,7 @@ $(document).ready(function() {
     $("ul#destination").append("<li><span class='location'>" + newLocation.placeName + "</span></li>");
 
     $(".location").last().click(function() {
-      $("#show-location").show();
+      $("#show-location").toggle();
       $("#show-location h2").text(newLocation.placeName);
       $(".place-mark").text(newLocation.placeMark);
       $(".place-note").text(newLocation.placeNote);
